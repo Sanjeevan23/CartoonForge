@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root{
+  --bg-1: #050816;
+  --bg-2: #070812;
+  --card: rgba(255,255,255,0.04);
+}
+
+html,body,#root { height: 100%; }
+
+body {
+  background: radial-gradient(circle at 10% 10%, #050816, #070812 30%, #010204 100%);
+  color: #e6edf3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.animate-pulse-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
